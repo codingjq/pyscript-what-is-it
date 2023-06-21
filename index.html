@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    
+    </head>
+    <body>
+    
+    <div id="label">
+
+    </div>
+    
+<div id="buttons"><button id="main-btn" class="btn" py-click="btn_incrementer()">
+        Increment
+    </button>
+    <button id="reset-btn" class="btn" py-click="btn_reset()">
+        Reset
+    </button>
+
+<py-config>
+
+</py-config>
+
+<py-script>
+    
+label_div = Element("label")
+counter = 0
+magic_text = "🪄🪄🪄 Welcome to my Magic Button 🪄🪄🪄\n Count is:"
+label_div.element.innerText =  magic_text + str(counter)
+
+def btn_incrementer():
+    global counter
+    div = Element("label")
+    counter+=1
+    div.element.innerText = magic_text + str(counter)
+
+def btn_reset():
+    global counter
+    div = Element("label")
+    counter = 0
+    div.element.innerText = magic_text + str(counter)
+    
+</py-script>
+
+    </body>
+</html>

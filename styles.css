@@ -1,0 +1,53 @@
+:root {
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#label {
+    font-size: large;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#main_btn {
+    color: green;
+    background-color: lightgreen;
+    border: green 2px solid;
+}
+
+#reset-btn {
+    color: darkred;
+    background-color: lightcoral;
+    border: red 2px solid;
+}
+
+.btn {
+    font-family: Arial;
+    font-weight: 600;
+    color: darkgreen;
+    background-color: lightgreen;
+    border: darkgreen 2px solid;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    transition: all 0.1s ease-in-out ;
+    
+
+}
+
+.btn:hover {
+    padding: 8px 14px 8px 14px;
+    filter: brightness(120%)
+}
+
+.btn:active {
+    transform: scale(90%)
+}
